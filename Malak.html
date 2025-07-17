@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Malak's Web Page</title>
+    <style>
+        @keyframes rotateImage {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .rotating {
+            animation: rotateImage 4s linear infinite; /* 4 seconds per rotation */
+        }
+    </style>
 </head>
-<body>
-    <h1 style="font-size: 36px;">My Web Page</h1>
+<body style="background-color: #ffe6f0;">  <!-- Light pink background -->
 
-    <p style="color: blue; font-size: 24px;">Malak Faisal</p>
+    <!-- Title in red -->
+    <h1 style="font-size: 36px; color: red;">My Web Page</h1>
 
-    <img src="Malak.jpg" alt="Photo of Malak" width="120">
+    <!-- Name in blue -->
+    <p style="color: blue; font-size: 33px;">Malak Faisal</p>
 
-    <p style="color: red; style="font-size: 20px;">14 years old</p>
+    <p style="color: blue; font-size: 30px;">14 years old</p>
+
+    <!-- Rotating image -->
+    <img src="Malak1.jpg" alt="Photo of Malak" width="155" class="rotating">
+
 </body>
 </html>
